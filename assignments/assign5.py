@@ -1,4 +1,5 @@
 '''
+
 #1. WAP to compute the n terms of the following series: S = 1 - 2 + 3 - 4 + ...
 
 n = int(input("Enter the value of n: "))
@@ -18,6 +19,7 @@ print(sum)
 '''
 
 '''
+
 #2. WAP to compute the n terms of the following series: S = 1 - 1/1! + 1/2! - 1/3! + ... + (-1)^n/n!
 
 def factorial(num):

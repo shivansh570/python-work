@@ -33,6 +33,7 @@ print(sum)
 '''
 
 '''
+
 #3. Write a function to compute the factorial of a given number. Write a program in python
 # to read the value of n and use the factorial function to compute first n terms the 
 # given series: e = 1 + 1/1! + 1/2! + 1/3! + ... + 1/n!
