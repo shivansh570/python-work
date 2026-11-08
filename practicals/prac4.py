@@ -46,3 +46,26 @@ print()
 print("Total Employees:", Employee.count)
 
 '''
+
+'''
+#2). Write a program to define a class "2DPoint" with coordinates x and y as attributes. Create relevant methods and print the objects. Also define a method distance to calculate the distance between any two point objects.
+
+class Point2D:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def distance(self, point):
+        return ((self.x - point.x) ** 2 + (self.y - point.y) ** 2) ** 0.5
+
+    def __str__(self):
+        return f"Point({self.x}, {self.y})"
+
+p1 = Point2D(3, 4)
+p2 = Point2D(6, 8)
+print(p1)
+print()
+print(p2)
+print(f"Distance between {p1} and {p2}: {p1.distance(p2)}")
+
+'''
