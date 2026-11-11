@@ -23,6 +23,7 @@ print(f"Distance between {p1} and {p2}: {p1.distance(p2)}")
 
 '''
 
+'''
 #2). Inherit the Point2D class to create a Point3D class with an additional attribute z. 
  # Override the distance() method to calculate the distance
  # between two 3D points. Create objects and display them.
@@ -63,3 +64,17 @@ print()
 print(p2)
 
 print("Distance between", p1, "and", p2, ":", p1.distance(p2))
+
+'''
+
+#3). Accept a name from the user, then-
+ # Raise and handle appropriate exceptions if the entered text contains digits and/or special characters.
+
+try:
+    name = input("Enter your name: ")
+
+    if not name.isalpha():
+        raise ValueError("Invalid name")
+
+except ValueError:
+    print("Name should contain only alphabets.")
