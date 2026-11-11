@@ -103,4 +103,3 @@ print()
 file = open("Prime.txt", "r")
 print(file.readlines())
 file.close()
-
