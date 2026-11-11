@@ -68,12 +68,14 @@ print("Hourly Pay Rate: Rs.", worker.get_hourly_pay_rate())
 
 '''
 
+'''
 #2). Generate all prime numbers from 1 to 30 and store them in a text file named "Prime",
  # with each number on a separate line.
  # Open the file for reading and display its contents using:
  # 1. read()
  # 2. readline()
  # 3. readlines()
+
 
 file = open("Prime.txt", "w")
 
@@ -86,20 +88,25 @@ for num in range(2, 31):
 
 file.close()
 
-print("Method 1(read):")
+print("Method 1 (read):")
 print()
 file = open("Prime.txt", "r")
 print(file.read())
 file.close()
 
-print("Method 2(readline):")
+print("Method 2 (readline):")
 print()
 file = open("Prime.txt", "r")
 print(file.readline())
+for i in file:
+    print(i)
 file.close()
 
-print("Method 3(readlines):")
+print("Method 3 (readlines):")
 print()
 file = open("Prime.txt", "r")
 print(file.readlines())
 file.close()
+
+
+'''
