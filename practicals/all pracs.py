@@ -62,3 +62,102 @@ print(f"Prime numbers till {n}: \n {all_prime(n)}")
 print(f"First {n} prime numbers: \n {first_primes(n)}")
 
 '''
+
+'''
+#3). Write a program to create a pyramid of the character ‘*’ and a reverse pyramid
+
+n = int(input("enter the number of lines of pyramid : "))
+
+print("\nPyramid:")
+for i in range(1, n + 1):
+  spaces = " " * (n - i)
+  stars = "*" * (2 * i - 1)
+  print(spaces + stars)
+
+print("\nReverse Pyramid:")
+for i in range(n, 0, -1):
+  spaces = " " * (n - i)
+  stars = "*" * (2 * i - 1)
+  print(spaces + stars)
+
+'''
+
+'''
+#4). Write a program that accepts a character and performs the following:
+ #a. print whether the character is a letter or numeric digit or a special character.
+ #b. if the character is a letter, print whether the letter is uppercase or lowercase.
+ #c. if the character is a numeric digit, prints its name in text.
+
+char = input("enter character: ")
+
+def type_char(char):
+  if char.isalpha():
+    print(f"{char} : is a letter.")
+  elif char.isdigit():
+    print(f"{char} : is a digit.")
+  else:
+    print(f"{char} : is a special character.")
+
+
+def type_case(char):
+  if char.isalpha():
+    if char.islower():
+      print(f"{char} : is lowercase")
+    else:
+      print(f"{char} : is uppercase")
+
+
+def numeric_text(char):
+  if char.isdigit():
+    D = {
+        "0": "ZERO",
+        "1": "ONE",
+        "2": "TWO",
+        "3": "THREE",
+        "4": "FOUR",
+        "5": "FIVE",
+        "6": "SIX",
+        "7": "SEVEN",
+        "8": "EIGHT",
+        "9": "NINE"}
+    print(f"{char} : {D[char]}")
+
+type_char(char)
+type_case(char)
+numeric_text(char)
+
+'''
+
+'''
+#5). Write a program to perform the following operations on a string:
+ #a. Find the frequency of a character in a string.
+ #b. Replace a character by another character in a string.
+ #c. Remove the first occurrence of a character from a string.
+ #d. Remove all occurrences of a character from a string.
+
+text = input("Enter string: ")
+
+def frequency(text):
+  s = input("Enter character to count: ")
+  print(f"{text.count(s)} : is the number of times '{s}' is present in the string.")
+
+def replace_char(text):
+  s1 = input("Enter character to replace: ")
+  s2 = input("Enter new character: ")
+  print(f"{text.replace(s1, s2)} : is the new string.")
+
+def remove_first_occur(text):
+  s1 = input("Enter character to remove (first occurrence): ")
+  print(f"{text.replace(s1, '', 1)} : is the new string.")
+
+def remove_all_occur(text):
+  s1 = input("Enter character to remove (all occurrences): ")
+  print(f"{text.replace(s1, '')} : is the new string.")
+
+frequency(text)
+replace_char(text)
+remove_first_occur(text)
+remove_all_occur(text)
+
+'''
+ 
