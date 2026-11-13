@@ -67,6 +67,7 @@ print("Distance between", p1, "and", p2, ":", p1.distance(p2))
 
 '''
 
+'''
 #3). Accept a name from the user, then-
  # Raise and handle appropriate exceptions if the entered text contains digits and/or special characters.
 
@@ -78,3 +79,5 @@ try:
 
 except ValueError:
     print("Name should contain only alphabets.")
+
+'''
